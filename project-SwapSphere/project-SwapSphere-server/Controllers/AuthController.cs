@@ -119,6 +119,7 @@ namespace project_SwapSphere_server.Controllers
                     Login = userjson["login"]?.ToString() ?? throw new Exception("Login is missing"),
                     Password = Extentions.ComputeSha256Hash(userjson["password"]?.ToString() ?? throw new Exception("Password is missing")),
                     Name = userjson["name"]?.ToString() ?? throw new Exception("Name is missing"),
+                    Photo = userjson["photo"]?.ToString() ?? throw new Exception("Photo is missing"),
                     Email = userjson["email"]?.ToString() ?? throw new Exception("Email is missing"),
                     Role = Role.User
                 };

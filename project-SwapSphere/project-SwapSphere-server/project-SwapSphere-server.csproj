@@ -30,4 +30,8 @@
     <ProjectReference Include="..\project-SwapSphere-models\project-SwapSphere-models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+
 </Project>

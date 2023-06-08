@@ -21,6 +21,7 @@ namespace project_SwapSphere_dblayer
         public DbSet<Swap> Swaps { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Placeswap> Platforms { get; set; }
+       
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

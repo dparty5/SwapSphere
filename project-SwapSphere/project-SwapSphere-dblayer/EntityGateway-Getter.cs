@@ -44,7 +44,5 @@ namespace project_SwapSphere_dblayer
         public IEnumerable<Placeswap> GetPlaceswap() =>
             GetPlaceswap((x) => true);
 
-
-
     }
 }

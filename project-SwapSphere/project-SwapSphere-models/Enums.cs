@@ -12,4 +12,8 @@ namespace project_SwapSphere_models
         User = 1,
         Admin =2      
     }
+    public enum Rating
+    {
+        //варианты рейтинга
+    }
 }
