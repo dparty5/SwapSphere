@@ -37,13 +37,9 @@ namespace project_SwapSphere_dblayer
                  ?? throw new Exception("Swap is not found.");
 
             var entities = Context.Entities.Where(x =>
-                entitiesIds.Contains(x.Id)).Except(swap.Keys_Swap).ToArray();
+                entitiesIds.Contains(x.Id)).ToArray();
 
-            foreach(Entity_Swap entity in entities)         
-                if (action == ActionType.Add)         
-                    swap.Keys_Swap.Add(entity);          
-                else  
-                    swap.Keys_Swap.Remove(entity);
+           
 
             AddOrUpdate(swap);
             Context.SaveChanges();

@@ -57,7 +57,7 @@ namespace project_SwapSphere_server.Controllers
                 {
                     status = "ok",
                     swap = potentialSwap,
-                    entities = potentialSwap.Keys_Swap.Select(x => x.Id),
+                    
                     category = potentialSwap.Category
                 });
             else
@@ -78,7 +78,7 @@ namespace project_SwapSphere_server.Controllers
                 SwapSubdata.Entities => new
                 {
                     status = "ok",
-                    employees = potentialSwap?.Keys_Swap
+                   
                 },
                 SwapSubdata.UsedCategory => new
                 {

@@ -18,6 +18,6 @@ namespace project_SwapSphere_models.Models
         [StringLength(500)]
         public string? Description { get; set; }
         [JsonIgnore] public virtual Category? Category { get; set; }
-        [JsonIgnore] public virtual ICollection<Entity_Swap>? Keys_Swap { get; set; }
+        
     }
 }

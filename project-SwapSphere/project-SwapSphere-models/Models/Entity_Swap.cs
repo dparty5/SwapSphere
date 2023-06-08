@@ -12,8 +12,7 @@ namespace project_SwapSphere_models.Models
         public Guid Id { get; set; }
         [Required]
         public virtual Swap Swap {get; set;}
-        public string? Key { get; set;}
-        [Required]
+        
         public virtual Placeswap Placeswap { get; set;}
     }
 }
