@@ -1,0 +1,3 @@
+{
+  "connectionString": "Server=.;Initial Catalog=SwapSphereDB;Integrated Security=True;TrustServerCertificate=True"
+}
