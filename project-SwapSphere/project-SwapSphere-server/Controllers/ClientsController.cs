@@ -29,7 +29,7 @@ namespace project_SwapSphere_server.Controllers
                    Ok(new
                    {
                        status = "ok",
-                       orders = potentialClient.Orders
+                      
                    });
         }
 

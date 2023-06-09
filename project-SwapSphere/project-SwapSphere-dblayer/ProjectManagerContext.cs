@@ -19,7 +19,7 @@ namespace project_SwapSphere_dblayer
         public DbSet<Client> Clients { get; set; }
         
         public DbSet<Swap> Swaps { get; set; }
-        public DbSet<Order> Orders { get; set; }
+       
         
        
 

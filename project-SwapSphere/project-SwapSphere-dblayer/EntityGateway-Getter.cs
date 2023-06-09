@@ -29,11 +29,6 @@ namespace project_SwapSphere_dblayer
             GetSwaps((x) => true);
 
 
-        public IEnumerable<Order> GetOrders(Func<Order, bool> predicate) =>
-           Context.Orders.Where(predicate).ToArray();
-        public IEnumerable<Order> GetOrders() =>
-            GetOrders((x) => true);
-
 
       
 

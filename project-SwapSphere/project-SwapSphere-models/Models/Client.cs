@@ -26,7 +26,7 @@ namespace project_SwapSphere_models.Models
         public string Photo { get; set; }
         public int Rating { get; set; } // значения от 1 до 10
         public Role Role { get; set; }
-        public virtual ICollection<Order>? Orders { get; set; }
+        
         [JsonIgnore] public virtual ICollection<Swap>? Swaps { get; set; }
     }
 }
