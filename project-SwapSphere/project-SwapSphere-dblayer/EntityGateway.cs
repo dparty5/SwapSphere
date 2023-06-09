@@ -31,20 +31,7 @@ namespace project_SwapSphere_dblayer
         }
 
 
-        public int EntitiesInSwap(ActionType action,Guid swapId, params Guid[] entitiesIds)
-        {
-            var swap = Context.Swaps.FirstOrDefault(x => x.Id == swapId)
-                 ?? throw new Exception("Swap is not found.");
-
-            var entities = Context.Entities.Where(x =>
-                entitiesIds.Contains(x.Id)).ToArray();
-
-           
-
-            AddOrUpdate(swap);
-            Context.SaveChanges();
-            return entities.Length;
-        }
+    
 
         public int SwapsInCategory(ActionType action, Guid categoryId, params Guid[] swapsIds) 
         {

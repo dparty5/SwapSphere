@@ -17,7 +17,10 @@ namespace project_SwapSphere_models.Models
         [Required]
         [StringLength(500)]
         public string? Description { get; set; }
+
+        public DateTime Swap_date { get; set; }
         [JsonIgnore] public virtual Category? Category { get; set; }
-        
+
+        [JsonIgnore] public virtual Client? Clients { get; set; }
     }
 }

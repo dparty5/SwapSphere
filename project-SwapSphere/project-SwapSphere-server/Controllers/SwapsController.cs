@@ -140,7 +140,7 @@ namespace project_SwapSphere_server.Controllers
 
                 var changed = subdata switch
                 {
-                    SwapSubdata.Entities => _db.EntitiesInSwap(action, id, subdataIds),
+                    
                     SwapSubdata.UsedCategory => _db.SwapsInCategory(action, id, subdataIds),
                     _ => throw new Exception($"{subdata} instance is not covered.")
                 };

@@ -21,11 +21,7 @@ namespace project_SwapSphere_dblayer
             GetClients((x) => true);
 
 
-        public IEnumerable<Entity_Swap> GetEntity_Swaps(Func<Entity_Swap,bool> predicate) =>
-            Context.Entities.Where(predicate).ToArray();
-        public IEnumerable<Entity_Swap> GetEntity_Swaps() =>
-            GetEntity_Swaps((x) => true);
-
+      
 
         public IEnumerable<Swap> GetSwaps(Func<Swap, bool> predicate) =>
            Context.Swaps.Where(predicate).ToArray();
@@ -39,10 +35,7 @@ namespace project_SwapSphere_dblayer
             GetOrders((x) => true);
 
 
-        public IEnumerable<Placeswap> GetPlaceswap(Func<Placeswap, bool> predicate) =>
-           Context.Platforms.Where(predicate).ToArray();
-        public IEnumerable<Placeswap> GetPlaceswap() =>
-            GetPlaceswap((x) => true);
+      
 
     }
 }
